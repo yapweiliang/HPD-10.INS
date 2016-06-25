@@ -1,0 +1,382 @@
+; HPD-10 cakewalk instrument definition file
+; with thanks to http://www.chromakinetics.com/handsonic/
+; especially Luiz Dias (footkeys) and Peter <gollob@inote.at>
+
+; work in progress
+; [ ] what is PDL ?
+; [ ] complete my 'favourite' patches
+
+
+; ----------------------------------------------------------------------
+; patch names
+
+.Patch Names
+
+[Roland HPD-10 User Bank]
+1=01 Latin Perc
+2=02 Djembe
+3=03 Cajon
+4=04 Jazz Kit
+5=05 MiddleEast
+6=06 Pandeiro
+7=07 LatinHouse
+8=08 Nature
+9=09 China
+10=10 Orchestral
+11=11 Conga
+12=12 Bongo
+13=13 Timbales
+14=14 BongoConga
+15=15 Repinique
+16=16 Batucada
+17=17 Talking Dr
+18=18 Pot Drum
+19=19 African
+20=20 Rek
+21=21 Tabla
+22=22 Dholak
+23=23 Darabuka
+24=24 India
+25=25 Silkroad
+26=26 Gamelan
+27=27 Japan
+28=28 Korea
+29=29 Handbells
+30=30 Gyilli
+31=31 HonkyTonk
+32=32 SteelDrum
+33=33 Xylophone
+34=34 Vibraphone
+35=35 MelodicTom
+36=36 Marching
+37=37 BalladPerc
+38=38 MuteContrl
+39=39 Drums
+40=40 Brushes
+41=41 Electronik
+42=42 Metal
+43=43 808 Kit
+44=44 909 Kit
+45=45 Club Kit
+46=46 BreakBeats
+47=47 JunkBeat
+48=48 Drum Set
+49=49 BitCrushGT
+50=50 DrumChat
+51=51 DubDrum
+52=52 HandPowerD
+53=53 Tee Bits
+54=54 Cosmo 42
+55=55 Scientific
+56=56 Creature
+57=57 Droid
+58=58 Horror
+59=59 Suspense
+60=60 CarChase
+61=61 Foley
+62=62 Breath
+63=63 Noizes
+64=64 Resounder
+
+; ----------------------------------------------------------------------
+; note names
+;
+; -- if HH, and foot switch, then HPD-10 will transmit 4 steps lower.
+;[HPD-10 template in numeric order]
+;35=35 T1
+;36=36 M5
+;37=37 S1
+;38=38 M1
+;41=41 M4
+;44=44 T2
+;45=45 S3
+;46=46 M3
+;48=48 M2
+;49=49 S2
+;51=51 S5
+;52=52 DB
+;57=57 S4
+
+.Note Names
+
+[Roland HPD-10:template note names]
+38=38 M1
+48=48 M2
+46=46 M3
+41=41 M4
+36=36 M5
+37=37 S1
+49=49 S2
+45=45 S3
+57=57 S4
+51=51 S5
+52=52 DB
+35=35 T1
+44=44 T2
+
+;[Roland HPD-10:01 Latin Perc]
+
+;[Roland HPD-10:02 Djembe]
+
+;[Roland HPD-10:03 Cajon]
+
+;[Roland HPD-10:04 Jazz Kit]
+
+;[Roland HPD-10:05 MiddleEast]
+
+;[Roland HPD-10:06 Pandeiro]
+
+;[Roland HPD-10:07 LatinHouse]
+
+;[Roland HPD-10:08 Nature]
+
+;[Roland HPD-10:09 China]
+
+;[Roland HPD-10:10 Orchestral]
+
+;[Roland HPD-10:11 Conga]
+
+;[Roland HPD-10:12 Bongo]
+
+;[Roland HPD-10:13 Timbales]
+
+;[Roland HPD-10:14 BongoConga]
+
+;[Roland HPD-10:15 Repinique]
+
+;[Roland HPD-10:16 Batucada]
+
+;[Roland HPD-10:17 Talking Dr]
+
+;[Roland HPD-10:18 Pot Drum]
+
+;[Roland HPD-10:19 African]
+
+;[Roland HPD-10:20 Rek]
+
+;[Roland HPD-10:21 Tabla]
+
+;[Roland HPD-10:22 Dholak]
+
+;[Roland HPD-10:23 Darabuka]
+
+;[Roland HPD-10:24 India]
+
+;[Roland HPD-10:25 Silkroad]
+
+;[Roland HPD-10:26 Gamelan]
+
+;[Roland HPD-10:27 Japan]
+
+;[Roland HPD-10:28 Korea]
+
+;[Roland HPD-10:29 Handbells]
+
+;[Roland HPD-10:30 Gyilli]
+
+;[Roland HPD-10:31 HonkyTonk]
+
+;[Roland HPD-10:32 SteelDrum]
+
+;[Roland HPD-10:33 Xylophone]
+
+;[Roland HPD-10:34 Vibraphone]
+
+;[Roland HPD-10:35 MelodicTom]
+
+;[Roland HPD-10:36 Marching]
+
+;[Roland HPD-10:37 BalladPerc]
+
+;[Roland HPD-10:38 MuteContrl]
+
+;[Roland HPD-10:39 Drums]
+
+;[Roland HPD-10:40 Brushes]
+
+;[Roland HPD-10:41 Electronik]
+
+;[Roland HPD-10:42 Metal]
+
+;[Roland HPD-10:43 808 Kit]
+
+;[Roland HPD-10:44 909 Kit]
+
+;[Roland HPD-10:45 Club Kit]
+
+;[Roland HPD-10:46 BreakBeats]
+
+;[Roland HPD-10:47 JunkBeat]
+
+[Roland HPD-10:48 Drum Set]
+; swapped M1 and M3
+38=38 M1 334 AcuHH2
+48=48 M2 309 AcuTom 1 Hi
+46=46 M3 287 AcuSnare2
+41=41 M4 310 AcuTom 1 Mid
+36=36 M5 311 AcuTom 1 Lo
+37=37 S1 298 CrossStick 2
+49=49 S2 356 CrashCym 2
+45=45 S3 358 SplashCym 2
+57=57 S4 355 CrashCym 1
+51=51 S5 365 RideCym/Bell
+52=52 DB 359 ChinaCym
+35=35 T1 275 AcuKick 1
+44=44 T2 338 AcuHH2 Ft
+
+;[Roland HPD-10:49 BitCrushGT]
+
+;[Roland HPD-10:50 DrumChat]
+
+;[Roland HPD-10:51 DubDrum]
+
+;[Roland HPD-10:52 HandPowerD]
+
+;[Roland HPD-10:53 Tee Bits]
+
+;[Roland HPD-10:54 Cosmo 42]
+
+;[Roland HPD-10:55 Scientific]
+
+;[Roland HPD-10:56 Creature]
+
+;[Roland HPD-10:57 Droid]
+
+;[Roland HPD-10:58 Horror]
+
+;[Roland HPD-10:59 Suspense]
+
+;[Roland HPD-10:60 CarChase]
+
+;[Roland HPD-10:61 Foley]
+
+;[Roland HPD-10:62 Breath]
+
+;[Roland HPD-10:63 Noizes]
+
+;[Roland HPD-10:64 Resounder]
+
+
+
+; ----------------------------------------------------------------------
+; Controller Names
+;
+; taken verbatim from HPD-15.INS, some such as ribbon controllers not applicable
+;
+; 16 + 17 renamed from A1/A5 to M1/M5 (pad position)
+; 81 d beam position
+
+.Controller Names
+
+[Roland HPD-10 Controllers]
+0=0-Bank Select
+1=1-LFO PITCH
+4=4-Foot Control
+5=5-Portamento Time
+6=6-Data Entry
+7=7-Volume
+10=10-PAN
+11=11-LEVEL
+12=12-M-FX DEPTH
+16=16-M1 Position
+17=17-M5 Position
+38=38-Data Entry LSB
+64=64-Hold 1
+66=66-Modify Lock
+67=67-Modify Clear
+70=70-SWEEP
+74=74-COLOR
+76=76-LFO RATE
+81=81-D BEAM
+82=82-RL Controller
+83=83-RR Controller
+84=84-Portamento Control
+91=91-Effect1 (Reverb Send Level)
+92=92-Effect2 (LFO FLT/AMP)
+94=94-MULTI EFFECTS
+98=98-NRPN LSB
+99=99-NRPN MSB
+100=100-RPN LSB
+101=101-RPN MSB
+120=120-All Sounds Off
+121=121-Reset All Controllers
+123=123-All Notes Off
+124=124-Omni Off
+125=125-Omni On
+126=126-Mono
+127=127-Poly
+
+; ----------------------------------------------------------------------
+; Instrument Definitions
+
+.Instrument Definitions
+
+[HPD-10]
+Control=Roland HPD-10 Controllers
+Patch[0]=Roland HPD-10 User Bank
+;Key[0,1] =Roland HPD-10:01 Latin Perc
+;Key[0,2] =Roland HPD-10:02 Djembe
+;Key[0,3] =Roland HPD-10:03 Cajon
+;Key[0,4] =Roland HPD-10:04 Jazz Kit
+;Key[0,5] =Roland HPD-10:05 MiddleEast
+;Key[0,6] =Roland HPD-10:06 Pandeiro
+;Key[0,7] =Roland HPD-10:07 LatinHouse
+;Key[0,8] =Roland HPD-10:08 Nature
+;Key[0,9] =Roland HPD-10:09 China
+;Key[0,10]=Roland HPD-10:10 Orchestral
+;Key[0,11]=Roland HPD-10:11 Conga
+;Key[0,12]=Roland HPD-10:12 Bongo
+;Key[0,13]=Roland HPD-10:13 Timbales
+;Key[0,14]=Roland HPD-10:14 BongoConga
+;Key[0,15]=Roland HPD-10:15 Repinique
+;Key[0,16]=Roland HPD-10:16 Batucada
+;Key[0,17]=Roland HPD-10:17 Talking Dr
+;Key[0,18]=Roland HPD-10:18 Pot Drum
+;Key[0,19]=Roland HPD-10:19 African
+;Key[0,20]=Roland HPD-10:20 Rek
+;Key[0,21]=Roland HPD-10:21 Tabla
+;Key[0,22]=Roland HPD-10:22 Dholak
+;Key[0,23]=Roland HPD-10:23 Darabuka
+;Key[0,24]=Roland HPD-10:24 India
+;Key[0,25]=Roland HPD-10:25 Silkroad
+;Key[0,26]=Roland HPD-10:26 Gamelan
+;Key[0,27]=Roland HPD-10:27 Japan
+;Key[0,28]=Roland HPD-10:28 Korea
+;Key[0,29]=Roland HPD-10:29 Handbells
+;Key[0,30]=Roland HPD-10:30 Gyilli
+;Key[0,31]=Roland HPD-10:31 HonkyTonk
+;Key[0,32]=Roland HPD-10:32 SteelDrum
+;Key[0,33]=Roland HPD-10:33 Xylophone
+;Key[0,34]=Roland HPD-10:34 Vibraphone
+;Key[0,35]=Roland HPD-10:35 MelodicTom
+;Key[0,36]=Roland HPD-10:36 Marching
+;Key[0,37]=Roland HPD-10:37 BalladPerc
+;Key[0,38]=Roland HPD-10:38 MuteContrl
+;Key[0,39]=Roland HPD-10:39 Drums
+;Key[0,40]=Roland HPD-10:40 Brushes
+;Key[0,41]=Roland HPD-10:41 Electronik
+;Key[0,42]=Roland HPD-10:42 Metal
+;Key[0,43]=Roland HPD-10:43 808 Kit
+;Key[0,44]=Roland HPD-10:44 909 Kit
+;Key[0,45]=Roland HPD-10:45 Club Kit
+;Key[0,46]=Roland HPD-10:46 BreakBeats
+;Key[0,47]=Roland HPD-10:47 JunkBeat
+Key[0,48]=Roland HPD-10:48 Drum Set
+;Key[0,49]=Roland HPD-10:49 BitCrushGT
+;Key[0,50]=Roland HPD-10:50 DrumChat
+;Key[0,51]=Roland HPD-10:51 DubDrum
+;Key[0,52]=Roland HPD-10:52 HandPowerD
+;Key[0,53]=Roland HPD-10:53 Tee Bits
+;Key[0,54]=Roland HPD-10:54 Cosmo 42
+;Key[0,55]=Roland HPD-10:55 Scientific
+;Key[0,56]=Roland HPD-10:56 Creature
+;Key[0,57]=Roland HPD-10:57 Droid
+;Key[0,58]=Roland HPD-10:58 Horror
+;Key[0,59]=Roland HPD-10:59 Suspense
+;Key[0,60]=Roland HPD-10:60 CarChase
+;Key[0,61]=Roland HPD-10:61 Foley
+;Key[0,62]=Roland HPD-10:62 Breath
+;Key[0,63]=Roland HPD-10:63 Noizes
+;Key[0,64]=Roland HPD-10:64 Resounder
+Key[0,*]=Roland HPD-10:template note names
+Drum[*,*]=1
